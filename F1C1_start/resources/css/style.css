@@ -95,7 +95,40 @@ header .mobile {
   display: none;
 }
 
-@media only screen and (max-width: 450px) {
+header .desktop .button {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  header .desktop .button {
+    display: inline-block;
+    width: 100%;
+    padding: 0.1875rem 0.5rem;
+    background-color: #9dc20b;
+    line-height: 1.6;
+    color: white;
+  }
+
+  header .desktop {
+    display: inline-block;
+    width: 95%;
+    height: auto;
+    position: relative;
+  }
+
+  header nav ul {
+    justify-content: space-around;
+    align-items: right;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  nav li {
+    padding: 0rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
   header .content {
     display: flex;
     align-items: center;
@@ -207,6 +240,7 @@ header .mobile {
     align-items: center;
     justify-content: center;
     height: 28rem;
+    padding-left: 0;
   }
 
   #sign-up-cta {
