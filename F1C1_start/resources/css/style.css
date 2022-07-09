@@ -239,11 +239,10 @@ header .mobile {
     height: 20rem;
     width: 100%;
     padding: 0;
-    background-position: right;
+    background-position: center;
   }
-  #sign-up-cta{
+  #sign-up-cta {
     padding: 0;
-
   }
   #sign-up-cta h1 {
     font-size: 2.25rem;
@@ -255,7 +254,7 @@ header .mobile {
     width: 100%;
   }
 
-  #sign-up-cta .content-center{
+  #sign-up-cta .content-center {
     width: 100%;
   }
 }
@@ -312,7 +311,26 @@ header .mobile {
   line-height: 1.2;
 }
 
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 760px) {
+  .feature h2 {
+    line-height: 1.3;
+    text-align: left;
+    font-weight: ;
+  }
+
+  .feature h3 {
+    line-height: 1.4;
+    font-weight: 350;
+  }
+  .feature {
+    width: 100%;
+    margin: 0;
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
   .feature h2 {
     font-size: 1.125rem;
     line-height: 1.3;
@@ -323,17 +341,16 @@ header .mobile {
     font-size: 0.875rem;
     line-height: 1.4;
   }
-}
 
-@media only screen and (max-width: 760px) {
   #features-section {
     flex-flow: column;
     padding: 0;
   }
 
   .feature {
+    width: 100%;
     margin: 0;
-    padding: 1.25rem 1rem 0 1rem;
+    padding: 1rem 0rem 1.875rem 0rem;
   }
 }
 
@@ -383,6 +400,20 @@ header .mobile {
 }
 
 @media only screen and (max-width: 760px) {
+  #filters-section .content h2 {
+    padding-bottom: 0.625rem;
+    line-height: 1.3;
+    margin: 0;
+  }
+
+  #filters-section .content h3 {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 450px) {
   #filters-section {
     padding: 1.5rem 0 0 0;
   }
@@ -396,18 +427,28 @@ header .mobile {
     font-size: 1.125rem;
     line-height: 1.3;
     font-weight: normal;
+    margin: 0;
   }
 
   #filters-section .content h3 {
     font-size: 0.875rem;
     line-height: 1.4;
+    margin: 0;
   }
 
   #filters-section .images-container {
+    position: relative;
     padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
   }
 
-  #filters-section .extra {
+  #filters-section .image-container {
+    max-width: calc(100% / 3);
+  }
+
+  #filters-section .extra img {
     display: none;
   }
 }
@@ -453,6 +494,12 @@ header .mobile {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  #quotes-section .quote {
+    line-height: 1.4;
+    font-size: 1.5rem;
+  }
+}
 /* Footer */
 
 footer {
@@ -470,7 +517,7 @@ footer .copyright {
   flex-grow: 1;
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (max-width: 450px) {
   footer .content {
     font-size: 0.625rem;
   }
