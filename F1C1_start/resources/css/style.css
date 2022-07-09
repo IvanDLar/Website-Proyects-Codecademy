@@ -95,18 +95,31 @@ header .mobile {
   display: none;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 450px) {
   header .content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+  }
+
+  header .desktop {
     display: none;
   }
 
-  header .mobile {
-    display: block;
-    width: 100%;
+  header .desktop-logo {
+    display: none;
   }
 
   header .content {
-    padding: 0.5rem 0;
+    padding: 0 0;
+  }
+
+  header .mobile {
+    display: inline-block;
+    width: 95%;
+    height: auto;
+    position: relative;
   }
 
   header .mobile ul {
@@ -114,6 +127,7 @@ header .mobile {
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    padding-left: 0;
   }
 
   header .mobile li {
@@ -223,14 +237,26 @@ header .mobile {
 @media only screen and (max-width: 450px) {
   #sign-up-section {
     height: 20rem;
+    width: 100%;
+    padding: 0;
+    background-position: right;
   }
+  #sign-up-cta{
+    padding: 0;
 
+  }
   #sign-up-cta h1 {
     font-size: 2.25rem;
+    width: 100%;
   }
 
   #sign-up-cta h2 {
     font-size: 2rem;
+    width: 100%;
+  }
+
+  #sign-up-cta .content-center{
+    width: 100%;
   }
 }
 
@@ -339,13 +365,14 @@ header .mobile {
 #filters-section .images-container {
   max-width: 100%;
   padding: 0 1%;
+  font-size: 0px;
 }
 
 #filters-section .image-container {
   max-width: 25%;
   display: inline-block;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   position: relative;
 }
 
@@ -389,13 +416,14 @@ header .mobile {
 
 #quotes-section {
   background-color: #f3f3f3;
+  padding: 5rem 0rem;
 }
 
 #quotes-section content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
