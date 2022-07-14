@@ -1,10 +1,161 @@
 html {
   font-family: "Helvetica";
-  font-size: 1.375rem;
-  background-color: black;
+  font-size: 16px;
+
   opacity: 0.9;
+  padding: 0px;
+  margin: 0px;
 }
 
 body {
-  color: white;
+  color: seashell;
+  background-color: black;
+}
+
+/*Header*/
+
+header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  padding: 1rem 1.875rem;
+  border-bottom: 1px solid;
+  border-color: white;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  height: 4.3125rem;
+  background-color: black;
+}
+
+header nav {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+}
+
+header nav .logo {
+  height: 3.125rem;
+  padding-left: 3rem;
+}
+
+nav li {
+  padding-left: 2rem;
+  font-size: 1.5rem;
+}
+
+nav li a {
+  color: seashell;
+}
+
+/*Main Content*/
+
+.main-content {
+  position: relative;
+  width: 100%;
+  top: 5.3125rem;
+}
+
+/*Mission*/
+
+article .mission {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background-image: url("../Images/img-mission-background.webp");
+  height: 43.75rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+article .mission .content {
+  width: 100%;
+  background-color: black;
+}
+
+article .mission .title {
+  font-size: 2rem;
+  margin: 0.5rem 0rem 1rem 0rem;
+}
+
+article .mission .description {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+/*Gallery*/
+
+article .gallery {
+  margin-top: 5rem;
+}
+
+article .gallery .images-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+article .gallery .image-container {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  margin: 1rem;
+}
+
+article .gallery .image-container img {
+  position: absolute;
+  max-width: 100%;
+}
+
+article .gallery .title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+article .gallery .description {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+article .gallery .image-name {
+  margin: 0.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/*Locations*/
+article .locations {
+  background-image: url("../Images/img-locations-background.webp");
+  width: 100%;
+  height: 31.25rem;
+}
+
+article .locations .content {
+  display: flex;
+}
+
+article .locations .title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+article .locations .list {
+  display: flex;
+  justify-content: space-around;
+}
+
+article .locations .item {
+  width: 18.75rem;
+  height: auto;
+  background-color: black;
 }
