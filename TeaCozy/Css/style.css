@@ -135,27 +135,63 @@ article .gallery .image-name {
 
 /*Locations*/
 article .locations {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
   background-image: url("../Images/img-locations-background.webp");
-  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 31.25rem;
 }
 
-article .locations .content {
-  display: flex;
-}
-
 article .locations .title {
+  display: flex;
+  align-items: center;
   text-align: center;
   font-size: 2rem;
+  margin-bottom: 0.9375rem;
+  flex-flow: ;
 }
 
 article .locations .list {
   display: flex;
+  width: 100%;
+  max-height: 100%;
+
+  align-items: center;
   justify-content: space-around;
 }
 
 article .locations .item {
   width: 18.75rem;
+  margin: 0rem 1.25rem;
   height: auto;
   background-color: black;
+  text-align: center;
+  line-height: 2rem;
+}
+
+footer .content {
+  text-align: center;
+  line-height: 2rem;
+  height: 12.5rem;
+}
+
+footer .title {
+  font-size: 2rem;
+}
+
+footer .contact {
+  font-size: 1.1rem;
+}
+
+footer .phone {
+  font-size: 1.1rem;
+}
+
+footer .copyright {
+  margin-left: 1.25rem;
+  padding-bottom: 1.5rem;
 }
