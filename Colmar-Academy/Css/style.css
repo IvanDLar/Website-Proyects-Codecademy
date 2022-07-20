@@ -1,0 +1,290 @@
+@font-face {
+  font-family: "Avenir Black";
+  src: url(../Resources/fonts/avenir_ff/AvenirLTStd-Black.otf);
+}
+
+@font-face {
+  font-family: "Avenir Book";
+  src: url(../Resources/fonts/avenir_ff/AvenirLTStd-Book.otf);
+}
+
+@font-face {
+  font-family: "Avenir Roman";
+  src: url(../Resources/fonts/avenir_ff/AvenirLTStd-Roman.otf);
+}
+
+html {
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
+  font-family: "Avenir Roman";
+}
+
+body {
+  color: rgb(66, 66, 66);
+}
+
+/*Navigation Bar Section*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  background-color: white;
+  height: 4rem;
+  z-index: 1000;
+}
+
+nav .logo-title {
+  font-size: 1.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-title b {
+  color: black;
+  font-weight: 800;
+}
+
+.logo-title .academy {
+  font-family: "Avenir Roman";
+  font-weight: 10;
+  color: gray;
+}
+
+nav ul,
+footer .terms-privacy {
+  display: flex;
+  list-style: none;
+  padding: 0rem;
+  margin-right: 1.5rem;
+}
+
+nav ul li,
+footer .terms-privacy a {
+  display: flex;
+  margin: 0.5rem 0rem 0.5rem 1rem;
+  padding-bottom: 1.4rem;
+}
+
+nav ul li {
+  background: linear-gradient(currentColor 0 0) bottom / var(--d, 0) 3px
+    no-repeat;
+  transition: 0.5s;
+}
+nav ul li:hover {
+  --d: 100%;
+}
+/*Main Content*/
+
+.main-content {
+  display: flex;
+  flex-flow: column nowrap;
+
+  top: 3.5rem;
+  right: 0px;
+  left: 0px;
+  position: relative;
+}
+
+.learn,
+.start-learning {
+  display: flex;
+  width: 100%;
+  background-color: rgb(231, 231, 231);
+}
+
+.information {
+  display: flex;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+/*Learn Section*/
+
+.learn img {
+  margin: 2rem 1.5rem 2rem 1.5rem;
+  width: 60%;
+  height: auto;
+}
+
+.learn .content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 10rem 1rem 1.5rem;
+}
+
+.learn .content .title {
+  font-size: 3rem;
+  font-family: "Avenir Black";
+}
+
+.learn .content button {
+  background-color: rgb(66, 66, 66);
+  color: rgb(247, 247, 247);
+  font-size: 1.3rem;
+  padding: 1rem;
+  border: 0px;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+  margin: 1rem;
+  width: 100%;
+}
+
+.learn .content button:hover {
+  background-color: rgb(160, 160, 160);
+  color: rgb(38, 38, 38);
+}
+/*Information Section*/
+.information,
+.thesis {
+  margin: 1rem 1.5rem 2rem 1.5rem;
+}
+
+.information .content,
+.thesis .content {
+  width: 60%;
+}
+
+.information .content img,
+.thesis .content video {
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.information .content .title {
+  font-size: 2rem;
+  font-weight: 1000;
+  margin: 2rem 0rem 1.5rem 0rem;
+}
+
+.information .content .author {
+  margin: 2rem 0rem 0rem 0rem;
+  bottom: 0px;
+}
+
+.information .gallery {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  margin: 0rem 1rem 0rem 1.5rem;
+  width: 40%;
+}
+
+.information .title,
+.thesis .title {
+  margin: 0rem 0rem;
+}
+
+.information .description,
+.thesis .description {
+  margin: 0.2rem 0rem;
+}
+
+.information a {
+  margin: 0.2rem 0rem;
+}
+
+.information .box,
+.thesis .box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.information .box img,
+.thesis .box img {
+  padding: 1rem;
+  height: auto;
+  width: 35%;
+}
+
+.information .guest-lecture,
+.thesis .desing-prototype {
+  background-color: rgb(231, 231, 231);
+}
+
+.information .text,
+.thesis .text {
+  display: flex;
+  flex-flow: column;
+}
+/*Start Learning Section*/
+.start-learning {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.start-learning .section-title {
+  text-align: center;
+  font-weight: 900;
+  font-size: 2rem;
+  margin: 2rem 0rem 0rem 0rem;
+}
+
+.start-learning .gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem 2.5rem;
+}
+
+.start-learning .gallery .container {
+  width: 30%;
+  height: auto;
+  background-color: white;
+  margin: 1rem 1rem;
+}
+.start-learning .gallery img {
+  width: 100%;
+}
+
+.start-learning .gallery .text {
+  margin: 1rem 1rem 1.5rem 1rem;
+}
+/*Thesis Section*/
+
+.thesis {
+  display: flex;
+  flex-flow: column;
+}
+
+.thesis .section-title {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem 0rem;
+}
+
+.thesis .video-gallery {
+  display: flex;
+  justify-content: center;
+}
+
+.thesis .gallery {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0rem 1rem 0rem 1.5rem;
+  width: 40%;
+}
+
+.thesis .content .title {
+  font-size: 2rem;
+  font-weight: 1000;
+  margin: 1.5rem 0rem 0.5rem 0rem;
+}
+/*Footer Section*/
+
+footer {
+  margin: 1rem 1.5rem 0rem 1.5rem;
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+  border-top: 1px solid rgb(231, 231, 231);
+}
